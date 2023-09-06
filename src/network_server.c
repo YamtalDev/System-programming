@@ -7,21 +7,15 @@
 
     Date: 13.08.2023
 
-*******************************************************************************
-
-                          Description:
-
-  
-
 ******************************************************************************/
-#include <stdlib.h>                         /* system                        */
-#include <stddef.h>                        /* size_t, NULL                  */
-#include <string.h>                       /* strlen, memset                */
-#include <unistd.h>                      /* close, write, close           */
-#include <stdio.h>                      /* perror, printf, puts          */
-#include <sys/select.h>                /* select, tumeval, fd_set       */
+#include <stdlib.h>                        /* system                        */
+#include <stddef.h>                       /* size_t, NULL                  */
+#include <string.h>                      /* strlen, memset                */
+#include <unistd.h>                     /* close, write, close           */
+#include <stdio.h>                     /* perror, printf, puts          */
+#include <sys/select.h>               /* select, tumeval, fd_set       */
 
-#include "network_server.h"          /* Internal API                  */
+#include "network_server.h"         /* Internal API                  */
 /************************************************************************/
 static int udp = 0, tcp = 0;
 typedef struct sockaddr sa_t;
